@@ -6,9 +6,7 @@
   <title>Pluggable Identity</title>
   <link rel="stylesheet" href="../demos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace/dist/themes/light.css" />
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace/dist/shoelace.js"></script>
   <link rel="stylesheet" href="pluggable.css">
-  <script type="module" src="pluggable.js"></script>
 </head>
 <body>
   <main>
@@ -106,16 +104,19 @@
 
       </div>
     </sl-card>
+    <blt-identity anchor="some-site"></blt-identity>
   </main>
   <!--
-    - [ ] login button
+    - [x] login button
     - [ ] animation when login is clicked
-    - [ ] drop down of identities
+    - [x] drop down of identities
     - [ ] animation of plugging in with selected identity
     - [ ] state of the site changes
     - [ ] logout button on the identity affordance
     - [ ] logout animation
-    - [ ] state of the site changes again
+    - [x] state of the site changes again
    -->
-</body>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace/dist/shoelace.js"></script>
+  <script type="module" src="pluggable.js"></script>
+ </body>
 </html>
