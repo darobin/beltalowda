@@ -1,0 +1,11 @@
+
+@import url(common.css);
+
+main {
+  margin: 0 auto;
+  width: 800px;
+}
+h1 {
+  font-family: var(--h-font);
+  font-size: 2rem;
+}

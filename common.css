@@ -1,0 +1,29 @@
+
+@font-face {
+  font-family: "Catamaran";
+  src: url("fonts/Catamaran-VariableFont_wght.ttf");
+  font-style: normal;
+}
+@font-face {
+font-family: "Mulish";
+src: url("fonts/Mulish-VariableFont_wght.ttf");
+font-style: normal;
+}
+@font-face {
+font-family: "Mulish";
+src: url("fonts/Mulish-Italic-VariableFont_wght.ttf");
+font-style: italic;
+}
+
+:root {
+  --h-font: Catamaran;
+  --b-font: Mulish;
+  --green-500: hsl(142.1 70.6% 45.3%);
+  --sky-500: hsl(198.6 88.7% 48.4%);
+  --light-grey: #999;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--b-font);
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pluggable Identity</title>
+  <link rel="stylesheet" href="../demos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace/dist/themes/light.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace/dist/shoelace.js"></script>
+  <style>
+    #some-site {
+      max-width: 500px;
+    }
+
+    #some-site [slot='header'] {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #some-site h3 {
+      margin: 0;
+    }
+
+    #some-site sl-icon-button {
+      font-size: var(--sl-font-size-medium);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Pluggable Identity</h1>
+
+    <sl-card id="some-site">
+      <div slot="header">
+        Header Title
+        <sl-icon-button name="gear" label="Settings"></sl-icon-button>
+      </div>
+
+      This card has a header. You can put all sorts of things in it!
+    </sl-card>
+  </main>
+  <!--
+    - [ ] favicon
+    - [ ] bold h
+    - [ ] fake site
+    - [ ] login button
+    - [ ] animation when login is clicked
+    - [ ] drop down of identities
+    - [ ] animation of plugging in with selected identity
+    - [ ] state of the site changes
+    - [ ] logout button on the identity affordance
+    - [ ] logout animation
+    - [ ] state of the site changes again
+   -->
+</body>
+</html>
