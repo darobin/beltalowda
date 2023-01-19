@@ -21,6 +21,7 @@ font-style: italic;
   --green-500: hsl(142.1 70.6% 45.3%);
   --sky-500: hsl(198.6 88.7% 48.4%);
   --light-grey: #999;
+  --arena-bg: #ececf2;
 }
 html, body {
   margin: 0;

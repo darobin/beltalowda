@@ -1,6 +1,9 @@
 
 @import url(common.css);
 
+html {
+  background: var(--arena-bg);
+}
 main {
   margin: 0 auto;
   width: 800px;
@@ -8,4 +11,8 @@ main {
 h1 {
   font-family: var(--h-font);
   font-size: 2rem;
+}
+sl-card::part(base) {
+  background: #fff;
+  box-shadow: var(--sl-shadow-medium);
 }

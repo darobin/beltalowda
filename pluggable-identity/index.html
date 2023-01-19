@@ -11,19 +11,71 @@
     #some-site {
       max-width: 500px;
     }
-
     #some-site [slot='header'] {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-
-    #some-site h3 {
-      margin: 0;
+    #some-site [slot='header'] img {
+      vertical-align: middle;
     }
-
+    #some-site::part(body) {
+      padding: 0;
+      max-height: 640px;
+      overflow: auto;
+    }
     #some-site sl-icon-button {
       font-size: var(--sl-font-size-medium);
+    }
+    #some-site sl-button::part(base) {
+      color: #fff;
+    }
+    #some-site sl-button::part(base):hover {
+      background: hotpink;
+    }
+    #cat-site header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: mediumvioletred;
+      padding: 0 1rem;
+    }
+    #cat-site h2 {
+      font-family: var(--h-font);
+      color: #fff;
+      margin: 0;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px #fff;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+    #cat-site header img {
+      filter: invert(1);
+      vertical-align: text-bottom;
+    }
+    #cat-site section {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      column-gap: 1rem;
+      padding: 1rem;
+    }
+    #cat-site h3 {
+      margin: 0;
+      font-family: var(--h-font);
+      font-size: 1rem;
+    }
+    .byline {
+      font-size: 0.8rem;
+      margin-top: -0.4rem;
+    }
+    .byline a {
+      text-decoration: none;
+    }
+    #cat-site p {
+      font-size: 0.8rem;
+    }
+    #cat-site article img {
+      max-width: 100%;
     }
   </style>
 </head>
@@ -33,16 +85,101 @@
 
     <sl-card id="some-site">
       <div slot="header">
-        Header Title
+        <strong><img src="../img/cat.svg" alt="Lucky Cat Icon" width="32" height="32"> cat.society</strong>
         <sl-icon-button name="gear" label="Settings"></sl-icon-button>
       </div>
+      <div id="cat-site">
+        <header>
+          <h2>
+            <img src="../img/cat.svg" alt="Lucky Cat Icon" width="64" height="64">
+            Cat Society
+          </h2>
+          <sl-button size="small" outline>
+            <sl-icon slot="prefix" name="person-circle"></sl-icon>
+            Login
+          </sl-button>
+        </header>
+        <section>
+          <article>
+            <img src="../img/mochi.jpg" alt="Mochi sleeping on plush toy" width="226">
+            <h3>Cats: The Literal Best</h3>
+            <div class="byline">by <a href="https://berjon.com/" target="_blank">Kitsune</a></div>
+            <p>
+              These two levels correspond on the one hand to the function of "hegemony"
+              which the dominant group exercises throughout society and on the
+              other hand to that of "direct domination" or command exercised
+              through the State and "juridical" government. The functions in
+              question are precisely organisational and connective. The intel
+              lectuals are the dominant group's "deputies" exercising the sub
+              altern functions of social hegemony and political government.
+              These comprise :
+            </p>
+            <p>
+              1. The "spontaneous" consent given by the great masses of the
+              population to the general direction imposed on social life by the
+              dominant fundamental group ; this consent is "historically" caused
+              by the prestige (and consequent confidence) which the dominant
+              group enjoys because of its position and function in the world of
+              production.
+            </p>
+            <p>
+              2. The apparatus of state coercive power which "legally" enforces
+              discipline on those groups who do not "consent" either actively or
+              passively. This apparatus is, however, constituted for the whole of
+              society in anticipation of moments of crisis of command and
+              direction when spontaneous consent has failed.
+            </p>
+            <p>
+              This way of posing the problem has as a result a considerable
+              extension of the concept of intellectual, but it is the only way which
+              enables one to reach a concrete approximation of reality. It also
+              clashes with preconceptions of caste. The function of organising
+              social hegemony and state domination certainly gives rise to a
+              particular division of labour and therefore to a whole hierarchy of
+              qualifications in some of which there is no apparent attribution of
+              directive or organisational functions.
+            </p>
+          </article>
+          <article>
+            <h3>New Library Opens</h3>
+            <div class="byline">by <a href="https://berjon.com/" target="_blank">Mochi</a></div>
+            <p>
+              The hegemony of a directive centre over the intellectuals asserts
+              itself by two principal routes : 1. a general conception of life, a
+              philosophy (Gioberti), which offers to its adherents an intellectual
+              "dignity" providing a principle of differentiation from the old
+              ideologies which dominated by coercion, and an element of struggle
+              against them ; 2 . a scholastic programme, an educative principle
+              and original pedagogy which interests that fraction of the intel
+              lectuals which is the most homogeneous and the most numerous
+              (the teachers, from the primary teachers to the university pro
+              fessors), and gives them an activity of their own in the technical
+              field.
+            </p>
+            <img src="../img/library.jpg" alt="Mochi sleeping on books" width="226">
+            <p>
+              The Scholars' congresses which were repeatedly organised in the
+              period of the early Risorgimento had a double effect: 1 . they
+              regrouped the intellectuals of the highest grade, concentrating them
+              and multiplying their infuence ; 2 . they obtained a more rapid
+              concentration and a more decisive orientation of the intellectuals
+              of the lower grades, who normally tend to follow the university
+              professors and great scholars, through spirit of caste.
+            </p>
+            <p>
+              The study of encyclopaedic and specialised reviews furnishes
+              another aspect of the Moderates' hegemony. A party like that of
+              the Moderates offered the mass of the intellectuals all the satis
+              factions for their general needs which can be offered by a govern
+              ment (by a governing party) through the State services.
+            </p>
+          </article>
+        </section>
 
-      This card has a header. You can put all sorts of things in it!
+      </div>
     </sl-card>
   </main>
   <!--
-    - [ ] favicon
-    - [ ] bold h
     - [ ] fake site
     - [ ] login button
     - [ ] animation when login is clicked
