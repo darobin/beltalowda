@@ -1,6 +1,6 @@
 
 import { LitElement, html, css, nothing } from 'https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js';
-import DumbState from '../lib/dumb-state.js';
+import DumbState from './js/dumb-state.js';
 
 const state = new DumbState({
   state: 'logged-out',
@@ -188,19 +188,3 @@ export class BeltalowdaIdentity extends LitElement {
 }
 
 customElements.define('blt-identity', BeltalowdaIdentity);
-
-/*
-LOGGED OUT
-- [x] button shows "login"
-- [x] no ID float
-
-REQUESTING
-- [x] button loading
-- [ ] float with DD, arrow, some distance
-- [ ] can cancel
-
-LOGGED IN
-- [ ] no button just face
-- [ ] float with ID, logout button, no arrow, no distance, slightly transparent
-
-*/
