@@ -48,7 +48,7 @@ export class CatSocietyLoginButton extends LitElement {
   render () {
     if (this.state === 'logged-in') {
       return html`
-        <img src=${`../img/${this.identity.img}`} width="32" alt=${`${this.identity.name} picture`}>
+        <img src=${`img/${this.identity.img}`} width="32" alt=${`${this.identity.name} picture`}>
       `
       ;
     }
@@ -152,7 +152,7 @@ export class BeltalowdaIdentity extends LitElement {
           <sl-select placeholder="Pick login identity…" @sl-change=${this.handlePickIdentity}>
             <sl-icon name="person-circle" slot="prefix"></sl-icon>
             ${
-              this.identities.map(({ id, img, name }) => html`<sl-option value=${id}><img src=${`../img/${img}`} width="32" alt=${`${name} picture`} slot="prefix">${name}</sl-option>`)
+              this.identities.map(({ id, img, name }) => html`<sl-option value=${id}><img src=${`img/${img}`} width="32" alt=${`${name} picture`} slot="prefix">${name}</sl-option>`)
             }
           </sl-select>
           <div class="actions">
@@ -165,7 +165,7 @@ export class BeltalowdaIdentity extends LitElement {
     else if (this.state === 'logged-in') {
       content = html`
         <div class="logged-in">
-          <img src=${`../img/${this.identity.img}`} width="48" alt=${`${this.identity.name} picture`}>
+          <img src=${`img/${this.identity.img}`} width="48" alt=${`${this.identity.name} picture`}>
           <sl-icon-button name="box-arrow-right" label="Logout" id="logout-icon" style="font-size: 2rem; text-align: center;" @click=${this.handleLogout}></sl-icon-button>
         </div>
       `;
