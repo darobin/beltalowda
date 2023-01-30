@@ -2,14 +2,17 @@
 #pick-intent {
   min-width: 550px;
 }
+#random-site [slot='header'],
 #pick-intent [slot='header'] {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+#random-site [slot='header'] img,
 #pick-intent [slot='header'] img {
   vertical-align: middle;
 }
+#random-site::part(body),
 #pick-intent::part(body) {
   padding: 0;
   max-height: 400px;
@@ -43,4 +46,22 @@
 #cat-pics li {
   display: block;
   list-style-type: none;
+}
+
+#random-site {
+  max-width: 350px;
+}
+#random-site::part(body) {
+  background: #000;
+  color: fuchsia;
+  text-align: center;
+}
+#random-place h2 {
+  letter-spacing: 0.1rem;
+}
+#random-place .bordered {
+  border: 5px groove fuchsia;
+  border-radius: 5px;
+  width: min-content;
+  margin: 0 auto 2rem auto;
 }
