@@ -21,24 +21,27 @@
       is only available to pick from if it is installed by clicking on the top right button.
     </p>
 
-    <sl-card id="pick-intent">
-      <div slot="header">
-        <strong><img src="img/picture.svg" alt="Picture Icon" width="32" height="32"> picture collection</strong>
-        <blt-install-intent></blt-install-intent>
-      </div>
-      <div id="cat-pics">
-        <h2>Cat Gallery</h2>
-        <p>
-          Enjoy this great selection of cat pictures from our feed!
-        </p>
-        <ul>
-          <li><img src="img/mochi.jpg" alt="Mochi sleeping on plush toy" width="226"></li>
-          <li><img src="img/library.jpg" alt="Mochi sleeping on books" width="226"></li>
-          <li><img src="img/wtf-cat.jpg" alt="WTF cat" width="226"></li>
-          <li><img src="img/cat.svg" alt="Cute cat" width="226"></li>
-        </ul>
-      </div>
-    </sl-card>
+    <div class="hstack">
+      <sl-card id="pick-intent">
+        <div slot="header">
+          <strong><img src="img/picture.svg" alt="Picture Icon" width="32" height="32"> picture collection</strong>
+          <blt-install-intent></blt-install-intent>
+        </div>
+        <div id="cat-pics">
+          <h2>Cat Gallery</h2>
+          <p>
+            Enjoy this great selection of cat pictures from our feed!
+          </p>
+          <ul>
+            <li><img src="img/mochi.jpg" alt="Mochi sleeping on plush toy" width="226"></li>
+            <li><img src="img/library.jpg" alt="Mochi sleeping on books" width="226"></li>
+            <li><img src="img/wtf-cat.jpg" alt="WTF cat" width="226"></li>
+            <li><img src="img/cat.svg" alt="Cute cat" width="226"></li>
+          </ul>
+        </div>
+      </sl-card>
+      <blt-simple-intent-state></blt-simple-intent-state>
+    </div>
   </main>
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace/dist/shoelace.js"></script>

@@ -45,3 +45,8 @@ sl-card::part(base) {
   background: #fff;
   box-shadow: var(--sl-shadow-medium);
 }
+
+.hstack {
+  display: flex;
+  column-gap: 1rem;
+}

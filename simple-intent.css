@@ -1,6 +1,6 @@
 
 #pick-intent {
-  max-width: 550px;
+  min-width: 550px;
 }
 #pick-intent [slot='header'] {
   display: flex;
