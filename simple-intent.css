@@ -1,0 +1,46 @@
+
+#pick-intent {
+  max-width: 550px;
+}
+#pick-intent [slot='header'] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#pick-intent [slot='header'] img {
+  vertical-align: middle;
+}
+#pick-intent::part(body) {
+  padding: 0;
+  max-height: 400px;
+  overflow: auto;
+}
+#pick-intent sl-icon-button {
+  font-size: var(--sl-font-size-medium);
+}
+
+#cat-pics {
+  padding: 0 1rem;
+}
+#cat-pics h2 {
+  font-family: var(--h-font);
+  color: darkorange;
+  margin: 0;
+  -webkit-text-stroke: 1px #000;
+  font-size: 2rem;
+}
+#cat-pics p {
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+#cat-pics ul {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+}
+#cat-pics li {
+  display: block;
+  list-style-type: none;
+}

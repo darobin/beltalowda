@@ -47,6 +47,7 @@ export class BeltalowdaSidebar extends LitElement {
         <h1>beltalowda</h1>
         <nav>
           <ul>
+            <li><a href="simple-intent.html">Simple Intent</a></li>
             <li><a href="index.html">Pluggable Identity</a></li>
           </ul>
         </nav>

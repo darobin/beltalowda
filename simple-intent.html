@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>beltalowda • Simple Intent</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%220.9em%22 font-size=%22105%22>☄️</text></svg>">
+  <link rel="stylesheet" href="demos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace/dist/themes/light.css" />
+  <link rel="stylesheet" href="simple-intent.css">
+</head>
+<body>
+  <main>
+    <h1>Simple Intent</h1>
+    <p>
+      This shows a tile supporting a simple intent that can be installed/uninstalled and another tile that
+      calls it and receives a response.
+    </p>
+    <p>
+      The first thing that we have is a tile affording an intent to pick an image. <strong>Note</strong> that it
+      is only available to pick from if it is installed by clicking on the top right button.
+    </p>
+
+    <sl-card id="pick-intent">
+      <div slot="header">
+        <strong><img src="img/picture.svg" alt="Picture Icon" width="32" height="32"> picture collection</strong>
+        <blt-install-intent></blt-install-intent>
+      </div>
+      <div id="cat-pics">
+        <h2>Cat Gallery</h2>
+        <p>
+          Enjoy this great selection of cat pictures from our feed!
+        </p>
+        <ul>
+          <li><img src="img/mochi.jpg" alt="Mochi sleeping on plush toy" width="226"></li>
+          <li><img src="img/library.jpg" alt="Mochi sleeping on books" width="226"></li>
+          <li><img src="img/wtf-cat.jpg" alt="WTF cat" width="226"></li>
+          <li><img src="img/cat.svg" alt="Cute cat" width="226"></li>
+        </ul>
+      </div>
+    </sl-card>
+  </main>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace/dist/shoelace.js"></script>
+  <script type="module" src="simple-intent.js"></script>
+  <script type="module" src="js/nav.js"></script>
+ </body>
+</html>
